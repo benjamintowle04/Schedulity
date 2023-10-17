@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.as1">
+    <!-- permissions for INTERNET -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AS1"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".ViewAdvisorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewParentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewParentRequestsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DisownActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ImportScheduleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SelectReoccurringActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WebSocketConnectActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ExtraSummaryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CourseSummaryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JourneySummaryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ExtraMeetingDaysActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DailyViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WeeklyViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AppointmentEditActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RemoveFriendsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddFriendsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FriendsDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FriendsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddClassesDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddClassesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GymHoursActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudyHoursActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserActivity"
+            android:exported="true" />
+        <activity
+            android:name=".CounterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RegistrationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ClassDragDropActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SleepyTimeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AddExtrasActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AddExtrasDetailsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

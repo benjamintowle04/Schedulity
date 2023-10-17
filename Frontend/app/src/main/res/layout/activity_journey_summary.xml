@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gym_header"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JourneySummaryActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/gym_title"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:text="Gym Time"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/gym_data"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:text="I work out _ days per week, __ minutes a day"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/edit_btn_gym"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:text="Click to Edit Gym Time" />
+
+        <Button
+            android:id="@+id/click_to_view_courses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Click to View Courses" />
+
+        <TextView
+            android:id="@+id/study_hours_header"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_marginTop="20dp"
+            android:text="Study Hours"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/study_hours_data"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:text="I Study For _ to _ Hours Per Week"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/edit_btn_study"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Click To Edit Study Time" />
+
+        <TextView
+            android:id="@+id/sleepy_time_header"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="20dp"
+            android:text="Sleepy Time"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/sleepy_data_weeknights"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I sleep __ hours on weeknights with a bed time of _____"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/sleepy_data_weekends"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="On weekends, I sleep _ hours with a bed time of ______"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/edit_btn_sleepy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Click to edit sleepy time" />
+
+        <Button
+            android:id="@+id/click_to_view_extras"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Click to view Extracurriculars" />
+
+        <Button
+            android:id="@+id/confirm_btn_summary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="confirm" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

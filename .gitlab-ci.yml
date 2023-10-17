@@ -1,0 +1,70 @@
+stages:
+  - mavenbuild
+  - maventest
+  - mavenDeploy
+  - androidbuild
+  - androidtest
+
+
+maven-build: 
+  stage: mavenbuild
+  tags:
+    - springboot_tag
+  script:
+    - cd Backend/Schedulity
+    - mvn package
+
+
+maven-test:
+   stage: maventest
+   tags:
+     - springboot_tag
+   script:
+     - cd Backend/Schedulity
+     - mvn test
+   artifacts:
+     paths:
+       - Backend/Schedulity/target/Schedulity-1.0.0.jar
+
+
+
+
+autoDeploy:
+  stage: mavenDeploy  #do make a stage with same name!
+  tags:
+  - springboot_tag
+  script:
+    - cd Backend/Schedulity
+    - mvn package
+    - sudo mv target/*.jar /target/web-demo.jar 
+    - sudo systemctl stop system-web-demo
+    - sudo systemctl start system-web-demo
+
+
+android-build:
+  image: gjandres/android-ci:latest
+  stage: androidbuild
+  tags:
+   - android_tag_Ben
+  before_script:
+    - export GRADLE_USER_HOME=`pwd`/.gradle
+    - chmod +x ./Frontend/gradlew
+  script:
+    - cd Frontend # to where you have ‘gradlew’
+    - ./gradlew build
+  artifacts:
+    paths:
+    - Frontend/app/build/outputs/
+
+
+android-test:
+   image: gjandres/android-ci:latest
+   stage: androidtest
+   tags:
+    - android_tag_Ben
+   before_script:
+     - export GRADLE_USER_HOME=`pwd`/.gradle
+     - chmod +x ./Frontend/gradlew
+   script:
+     - cd Frontend
+     - ./gradlew test

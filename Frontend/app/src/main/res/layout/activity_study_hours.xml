@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".StudyHoursActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="270dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/white"
+        android:fontFamily="serif"
+        android:text="How many hours do you prefer to study each week?"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <Button
+        android:id="@+id/next_btn_study"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:background="@drawable/custom_button"
+        android:text="Next"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.606"
+        />
+
+    <RadioGroup
+        android:layout_width="161dp"
+        android:layout_height="203dp"
+        app:layout_constraintBottom_toTopOf="@+id/next_btn_study"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.28"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.264">
+
+        <RadioButton
+            android:id="@+id/radio_8_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="8-10 Hours" />
+
+        <RadioButton
+            android:id="@+id/radio_11_13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="11-13 Hours" />
+
+        <RadioButton
+            android:id="@+id/radio_14_16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="14-16 Hours" />
+
+        <RadioButton
+            android:id="@+id/radio_17_plus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="17+ Hours" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

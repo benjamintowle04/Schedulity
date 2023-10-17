@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0f6b22e3-488f-4a53-900b-08763a7e3622" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Schedulity/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Schedulity/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Schedulity/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Schedulity/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Schedulity/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Schedulity/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Schedulity/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Schedulity/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Schedulity/src/main/java/onetomany/Courses/Course.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Schedulity/src/main/java/onetomany/Courses/CourseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Schedulity/src/main/java/onetomany/Courses/CourseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Schedulity/src/main/java/onetomany/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Schedulity/src/main/java/onetomany/Users/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Schedulity/src/main/java/onetomany/Users/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Schedulity/src/main/java/onetomany/Users/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Schedulity/src/main/java/onetoone/Laptops/Laptop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Schedulity/src/main/java/onetoone/Laptops/LaptopController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Schedulity/src/main/java/onetoone/Laptops/LaptopRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Schedulity/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Schedulity/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Schedulity/target/classes/onetoone/Laptops/Laptop.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Schedulity/target/classes/onetoone/Laptops/LaptopController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Schedulity/target/classes/onetoone/Laptops/LaptopRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Schedulity/target/classes/onetoone/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Schedulity/target/classes/onetoone/Users/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Schedulity/target/classes/onetoone/Users/UserController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Schedulity/target/classes/onetoone/Users/UserRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Schedulity/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Schedulity/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Schedulity/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Schedulity/target/onetoone-1.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Schedulity/target/onetoone-1.0.0.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/onetomany/Courses/Course.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/onetomany/Courses/CourseController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/onetomany/Courses/CourseRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/onetomany/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/onetomany/Users/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/onetomany/Users/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/onetomany/Users/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/onetoone/Laptops/Laptop.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/onetoone/Laptops/LaptopController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/onetoone/Laptops/LaptopRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/onetoone/Laptops/Laptop.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/onetoone/Laptops/LaptopController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/onetoone/Laptops/LaptopRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/onetoone/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/onetoone/Users/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/onetoone/Users/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/onetoone/Users/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/onetoone-1.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/onetoone-1.0.0.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Experiments/Wesley's Experiments/Spring/target/classes/META-INF/build-info.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../Experiments/Wesley's Experiments/Spring/target/classes/META-INF/build-info.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Experiments/Wesley's Experiments/Spring/target/classes/org/springframework/samples/petclinic/owner/UsersController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Experiments/Wesley's Experiments/Spring/target/classes/org/springframework/samples/petclinic/owner/UsersController.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="isToolWindowVisible" value="false" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2LTQvRwfZQDwKe7f5Ny2GKgJVuN" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/repo/1_an_2/Backend/Schedulity",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="springboot_example" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="springboot_example" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0f6b22e3-488f-4a53-900b-08763a7e3622" name="Changes" comment="" />
+      <created>1675892823876</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1675892823876</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/../../.." />
+    </ignored-roots>
+  </component>
+</project>

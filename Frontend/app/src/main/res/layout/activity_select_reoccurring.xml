@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SelectReoccurringActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="5sp"
+        android:background="@color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10sp">
+
+            <CheckBox
+                android:id="@+id/checkBoxDaily"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:text="Daily"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:id="@+id/SelectDayDialoge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:layout_marginBottom="20sp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+
+                <Button
+                    android:id="@+id/MondayButton"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:contentDescription="Monday"
+                    android:gravity="center"
+                    android:text="MO"
+                    android:textSize="10sp" />
+
+                <Button
+                    android:id="@+id/TuesdayButton"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5sp"
+                    android:contentDescription="Tuesday"
+                    android:gravity="center"
+                    android:text="TU"
+                    android:textSize="10sp" />
+
+                <Button
+                    android:id="@+id/WednesdayButton"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5sp"
+                    android:contentDescription="Wednesday"
+                    android:gravity="center"
+                    android:text="WE"
+                    android:textSize="10sp" />
+
+                <Button
+                    android:id="@+id/ThursdayButton"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5sp"
+                    android:contentDescription="Thursday"
+                    android:gravity="center"
+                    android:text="TH"
+                    android:textSize="10sp" />
+
+                <Button
+                    android:id="@+id/FridayButton"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5sp"
+                    android:contentDescription="Friday"
+                    android:gravity="center"
+                    android:text="FR"
+                    android:textSize="10sp" />
+
+                <Button
+                    android:id="@+id/SaturdayButton"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5sp"
+                    android:contentDescription="Saturday"
+                    android:gravity="center"
+                    android:text="SA"
+                    android:textSize="10sp" />
+
+                <Button
+                    android:id="@+id/SundayButton"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5sp"
+                    android:contentDescription="Sunday"
+                    android:gravity="center"
+                    android:text="SU"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+
+            <CheckBox
+                android:id="@+id/checkBoxWeekly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:text="Weekly"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:id="@+id/SelectDateDialoge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20sp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/StartDateTV"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="showDatePickerDialogStart"
+                    android:text="Start Date"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="    -    "
+                    android:textAlignment="center"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:id="@+id/EndDateTV"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="showDatePickerDialogEnd"
+                    android:text="End Date"
+                    android:textSize="24dp" />
+
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/checkBoxMonthly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:text="Monthly"
+                android:textSize="24sp" />
+
+            <CheckBox
+                android:id="@+id/checkBoxYearly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:text="Yearly"
+                android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:text="Submit" />
+
+</LinearLayout>

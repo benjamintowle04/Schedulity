@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"com.example.as1"},{"l":"com.example.as1.Adapters"},{"l":"com.example.as1.Controller"},{"l":"com.example.as1.Enum"},{"l":"com.example.as1.Models"},{"l":"com.example.as1.Parser"},{"l":"com.example.as1.Utils"},{"l":"com.example.as1.ViewHolder"}]

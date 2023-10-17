@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parentView"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/bordered_background"
+    >
+
+    <View
+        android:id="@+id/coloredRectangleGold"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/gold"
+        android:visibility="invisible"
+        android:layout_gravity="center"
+        android:layout_marginTop="2sp"
+        android:layout_marginLeft="2sp"
+        android:layout_marginRight="2sp"
+        android:layout_marginBottom="20sp"
+        android:foregroundGravity="center"/>
+
+    <View
+        android:id="@+id/coloredRectangleCardinal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/cardinal"
+        android:visibility="invisible"
+        android:layout_gravity="center"
+        android:layout_marginTop="2sp"
+        android:layout_marginLeft="2sp"
+        android:layout_marginRight="2sp"
+        android:layout_marginBottom="20sp"
+        android:foregroundGravity="center"/>
+
+    <View
+        android:id="@+id/coloredRectangleBlue"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/lightblue"
+        android:visibility="invisible"
+        android:layout_gravity="center"
+        android:layout_marginTop="2sp"
+        android:layout_marginLeft="2sp"
+        android:layout_marginRight="2sp"
+        android:layout_marginBottom="5sp"
+        android:foregroundGravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:id="@+id/cellDayText"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="1"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        app:layout_constraintVertical_bias="0.25"/>
+
+</LinearLayout>

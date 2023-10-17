@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5sp"
+    tools:context=".AddExtrasDetailsActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/activit_name_prompt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter the name of the activity you are involved in"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/activity_name_input"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:ems="10"
+            android:hint="Enter Name"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/activity_location_prompt"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_marginTop="15dp"
+            android:text="Please enter the location of your activity"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/activity_location_input"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:ems="10"
+            android:hint="Enter Location Name"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/start_time_label_extra"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:gravity="bottom"
+            android:text="Start Time"
+            android:textSize="24sp" />
+
+        <TimePicker
+            android:id="@+id/time_picker_start"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:background="@color/background_gradient_end"
+            android:headerBackground="@color/cardinal"
+            android:timePickerMode="spinner" />
+
+        <TextView
+            android:id="@+id/time_display_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textsize"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:gravity="bottom"
+            android:text="End Time"
+            android:textSize="24sp" />
+
+        <TimePicker
+            android:id="@+id/time_picker_end"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/background_gradient_end"
+            android:headerBackground="@color/cardinal"
+            android:timePickerMode="spinner" />
+
+        <TextView
+            android:id="@+id/time_display_end"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/next_btn_extras_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Next" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

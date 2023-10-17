@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/weeknight_textView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SleepyTimeActivity">
+
+    <TextView
+        android:id="@+id/weeknight_textview"
+        android:layout_width="408dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="56dp"
+        android:text="Enter Your Weeknight Bed Time"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/weekend_textview"
+        android:layout_width="408dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="324dp"
+        android:text="Enter Your Weekend Bed Time"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/am_pm_weeknight"
+        android:layout_width="103dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="100dp"
+        android:text="PM"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.326"
+        app:layout_constraintStart_toEndOf="@+id/bedtime_weeknight"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/am_pm_weekend"
+        android:layout_width="103dp"
+        android:layout_height="51dp"
+        android:text="PM"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.326"
+        app:layout_constraintStart_toEndOf="@+id/bedtime_weekend"
+        app:layout_constraintTop_toBottomOf="@+id/weekend_textview" />
+
+    <EditText
+        android:id="@+id/bedtime_weeknight"
+        android:layout_width="213dp"
+        android:layout_height="52dp"
+        android:ems="10"
+        android:hint="##:##"
+        android:inputType="time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.232"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weeknight_textview" />
+
+    <EditText
+        android:id="@+id/bedtime_weekend"
+        android:layout_width="213dp"
+        android:layout_height="52dp"
+        android:ems="10"
+        android:hint="##:##"
+        android:inputType="time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.232"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weekend_textview" />
+
+    <TextView
+        android:id="@+id/sleep_header"
+        android:layout_width="417dp"
+        android:layout_height="59dp"
+        android:background="?attr/colorPrimary"
+        android:text="Sleepy Time"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/weeknight_textview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/weeknight_hours_prompt"
+        android:layout_width="407dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="12dp"
+        android:text="How many hours of sleep do you try to get on weeknights?"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bedtime_weeknight" />
+
+    <TextView
+        android:id="@+id/weekend_hours_prompt"
+        android:layout_width="407dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="12dp"
+        android:text="How many hours of sleep do you try to get on weekends?"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bedtime_weekend" />
+
+    <EditText
+        android:id="@+id/weeknight_hours_input"
+        android:layout_width="210dp"
+        android:layout_height="53dp"
+        android:ems="10"
+        android:hint="Enter a whole number"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.228"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weeknight_hours_prompt" />
+
+    <EditText
+        android:id="@+id/weekend_hours_input"
+        android:layout_width="210dp"
+        android:layout_height="53dp"
+        android:ems="10"
+        android:hint="Enter a whole number"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.228"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weekend_hours_prompt" />
+
+    <Button
+        android:id="@+id/next_btn_sleepy"
+        android:layout_width="106dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="16dp"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/prev_btn_sleepy"
+        android:layout_width="111dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="16dp"
+        android:text="Previous"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.086"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

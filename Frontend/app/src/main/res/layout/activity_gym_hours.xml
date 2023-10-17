@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GymHoursActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/GymHoursText"
+            android:layout_width="284dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/white"
+            android:fontFamily="serif"
+            android:text="How many times do you work out per week?"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="301dp"
+            android:layout_height="49dp"
+            android:background="@color/white"
+            android:fontFamily="serif"
+            android:text="How many minutes do you spend in the gym each day?"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.761" />
+
+        <EditText
+            android:id="@+id/hours_per_day"
+            android:layout_width="0dp"
+            android:layout_height="66dp"
+            android:layout_marginHorizontal="35dp"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="49dp"
+            android:layout_marginEnd="43dp"
+            android:layout_marginBottom="61dp"
+            android:hint="Enter a time in minutes (3 hours maximum)"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toBottomOf="@+id/prev_btn_gym"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+        <Button
+            android:id="@+id/next_btn_gym"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="20dp"
+            android:text="Next"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/prev_btn_gym"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/previous"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="144dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="66dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView2"
+            app:layout_constraintStart_toStartOf="@+id/GymHoursText"
+            app:layout_constraintTop_toTopOf="@+id/GymHoursText">
+
+            <RadioButton
+                android:id="@+id/radio_1_day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1 day" />
+
+            <RadioButton
+                android:id="@+id/radio_2_days"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2 days" />
+
+            <RadioButton
+                android:id="@+id/radio_3_days"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3 days" />
+
+            <RadioButton
+                android:id="@+id/radio_4_days"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4 days" />
+
+            <RadioButton
+                android:id="@+id/radio_5_days"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5 days" />
+
+            <RadioButton
+                android:id="@+id/radio_6_days"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="6 days" />
+
+            <RadioButton
+                android:id="@+id/radio_7_days"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="7 days" />
+
+            <RadioButton
+                android:id="@+id/radio_0_days"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="I Do Not Work Out" />
+
+        </RadioGroup>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>
